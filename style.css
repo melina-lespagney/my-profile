@@ -1,0 +1,169 @@
+html {
+	height: 100%;
+	overflow: hidden;
+}
+
+body {
+	background-color: #f1f9f9;
+	color: rgb(30, 30, 30);
+	perspective: 1px;
+	transform-style: preserve-3d;
+	height: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	font-family: Courier;
+	font-size:17px;
+	font-weight:lighter;
+}
+
+header {
+	box-sizing: border-box;
+	min-height: 100vh;
+	padding: 30vw 0 5vw;
+	margin-bottom: 700px;
+	position: relative;
+	transform-style: inherit;
+	width: 100vw;
+}
+
+header h1 {
+	margin-top: -100px;
+}
+
+header, header:before {
+	background: 50% 50% / cover;
+}
+
+header::before {
+	bottom: 0;
+	content: "";
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: block;
+	background-image: url(images/agora.jpg);
+	background-size: cover;
+	transform-origin: center center 0;
+	transform: translateZ(-1px) scale(2);
+	z-index: -1;
+	min-height: 100vh;
+}
+
+header * {
+	font-weight: normal;
+	letter-spacing: 0.2em;
+	text-align: center;
+	margin: 0;
+	padding: 1em 0;
+}
+
+h1 {
+	font-family: 'Playfair Display', serif;
+    color: #f6eedf;
+    font-weight: 100;
+    letter-spacing: 8px;
+    font-size: 75px;
+}
+
+h2, h3 {
+    font-family: Helvetica;
+}
+
+
+h2 {
+    color: #90cae6;
+    font-weight: lighter;
+    letter-spacing: 10px;
+    font-size: 35px;
+}
+
+a{
+	text-decoration:none;
+	color:#90cae6;
+	font-weight: bold;
+}
+a:hover {
+	color:blue;
+}
+
+.container {
+	width:1200px;
+	margin:20px auto;
+}
+@media (max-width:760px) {
+	.container {
+		width:600px;
+	}
+}
+@media (max-width:500px) {
+	.container {
+		width:400px;
+	}
+}
+
+.card-white {
+	background-color: #ffffff;
+	padding:30px;
+	text-align: center;
+	border-radius: 4px;
+}
+
+.img-circle {
+	width:43%;
+	border-radius:50%;
+}
+
+.btn-blue {
+	background-color: #90cae6;
+	color: white;
+	padding: 8px 15px;
+	border-radius: 4px;
+}
+.btn-blue:hover {
+	background-color: #00a8cc;
+	color: white;
+}
+
+.img-center {
+	width:1200px;
+	margin:0px auto;
+}
+@media (max-width:760px) {
+	.img-center {
+		width:600px;
+	}
+}
+@media (max-width:500px) {
+	.img-center {
+		width:400px;
+	}
+}
+
+.list-inline {
+	list-style: none;
+	padding-left: 0px;
+}
+.list-inline > li {
+	display: inline;
+	padding: 0px 20px;
+	margin: 0px auto;
+}
+.list-inline i {
+	font-size:50px;
+	color: #90cae6;
+}
+.list-inline i:hover {
+	font-size:50px;
+	color: #00a8cc;
+}
+
+#introduction {
+	margin-bottom: 40px;
+}
+
+
+
+
+
+
